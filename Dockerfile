@@ -1,4 +1,4 @@
-FROM  centos:latest/kittu
+FROM  centos:latest
 MAINTAINER krishnareddyjava03@gmail.com
 RUN yum install -y httpd \
  zip\
