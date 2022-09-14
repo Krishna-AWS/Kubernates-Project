@@ -1,7 +1,7 @@
 FROM  centos:latest
 MAINTAINER krishnareddyjava03@gmail.com
-RUN yum install -y zip
-RUN yum install -y unzip
+RUN dnf install zip
+RUN dnf install unzip
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page254/photogenic.zip /var/www/html/
 WORKDIR /var/www/html/
 RUN unzip photogenic.zip
