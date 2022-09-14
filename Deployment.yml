@@ -1,20 +1,20 @@
 kind: Deployment
 apiVersion: apps/v1
 metadata:
-   name: mrdevops
+   name: krishna
 spec:
    replicas: 2
    selector:      # tells the controller which pods to watch/belong to kittu
     matchLabels:
-     app: mrdevops
+     app: krishna
    template:
       metadata:
         labels:
-          app: mrdevops
+          app: krishna
       spec:
        containers:
-        - name: mrdevops
-          image: vikashashoke/pipeline-demo
+        - name: krishna
+          image: kittu1993/project_demo
           imagePullPolicy: Always
           ports:
           - containerPort: 80
